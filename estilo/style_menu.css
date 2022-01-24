@@ -20,7 +20,7 @@
   --cor3: #7F5959;
   --cor4: #804515 ;
   --cor5: #552700;
-  
+  */
   
   --cor0: #F5F5F5; 
   --cor1: #75C1C7;
@@ -28,29 +28,29 @@
   --cor3: #708D8F;
   --cor4: #C2C2C2;
   --cor5: #5560C7; 
-  */
+/*
    --cor0: #c5ebd6;   
    --cor1: #83e1ad;
    --cor2: #3ddc84;
    --cor3: #2fa866;
    --cor4: #1a5c37;
    --cor5: #063d1e;  
-/*
+
  --cor0: #F2F2F2;
  --cor1: #c5f0f0;
  --cor2: #226666; 
  --cor3: #407F7F ;
  --cor4: #0D4D4D;
  --cor5: #251f74;  
+
+ --cor1: #FFD1AA; 
+ --cor2: #D49A6A;
+ --cor3: #AA6C39;
+ --cor4: #7F5959;
+ --cor5: #804515 ;
+ --cor6: #552700;
+
 */
-
- --cor6:  #FFD1AA; 
- --cor7:  #D49A6A;
- --cor8:  #AA6C39;
- --cor9:  #7F5959;
- --cor10: #804515 ;
- --cor11: #552700;
-
    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
    --fonte-destaque: 'Bebas Neue', cursive;
    --fonte-android: 'Android', cursive;
@@ -309,14 +309,14 @@ footer a:hover{
         }
    
        .tab label:hover,
-       .tab input:checked + label {
+       .tab input:checked label {
            background: var(--cor3);    
            color: #fff;
         }
         .tabs {
         clear: both;
-        perspective: 400px;
-        -webkit-perspective: 400px;
+        perspective: auto;
+        -webkit-perspective: auto;
         }
 
         .tabs .content {
@@ -373,7 +373,7 @@ footer a:hover{
        }
 
        form h4 {    
-        background-color: var(--cor10);   
+        background-color: var(--cor1);   
         width:auto;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 14px;
