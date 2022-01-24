@@ -111,13 +111,13 @@ header > p {
 
 main{
     background-color: var(--cor0);
-    border-radius: 10px; 
+    border-radius: 5px; 
     box-shadow: 5px 5px 15px #4d3d3569; /*quanto vai para direita, quanto vai para baixo, espalhamento e a cor*/
     padding: 10px;
     margin:auto;
-    max-width: 400px;
+    max-width: 500px;
     height: 300px;
-    text-align: center;
+    text-align: left;
 }
 
 main p{ 
