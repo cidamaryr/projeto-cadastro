@@ -114,14 +114,16 @@ main{
     border-radius: 5px; 
     box-shadow: 5px 5px 15px #4d3d3569; /*quanto vai para direita, quanto vai para baixo, espalhamento e a cor*/
     padding: 10px;
-    margin:auto;
+    /*margin-left: 10px;*/
+    margin: auto;
     max-width: 500px;
     height: 300px;
     text-align: left;
+
 }
 
 main p{ 
-    margin: 15px 0px;
+    margin: 2px 0px;
     text-align: justify;
     text-indent: 30px;
     font-size: 1em;    /*aumenta a fonte*/
