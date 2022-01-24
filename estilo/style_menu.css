@@ -115,8 +115,7 @@ main{
     box-shadow: 5px 5px 15px #4d3d3569; /*quanto vai para direita, quanto vai para baixo, espalhamento e a cor*/
     padding: 10px;
     margin:auto;
-    
-    width: 70%;
+    max-width: 350px;
     height: 300px;
     text-align: center;
 }
