@@ -6,7 +6,7 @@
 }
 
 :root {
- /*
+/*
   --cor0: #F2F2F2; 
   --cor1: #FFD1AA;
   --cor2: #349BEF;
@@ -28,21 +28,21 @@
   --cor3: #708D8F;
   --cor4: #C2C2C2;
   --cor5: #5560C7; 
-  
+  */
    --cor0: #c5ebd6;   
    --cor1: #83e1ad;
    --cor2: #3ddc84;
    --cor3: #2fa866;
    --cor4: #1a5c37;
    --cor5: #063d1e;  
-*/
+/*
  --cor0: #F2F2F2;
  --cor1: #c5f0f0;
  --cor2: #226666; 
  --cor3: #407F7F ;
  --cor4: #0D4D4D;
  --cor5: #251f74;  
-
+*/
 
  --cor6:  #FFD1AA; 
  --cor7:  #D49A6A;
@@ -258,8 +258,8 @@ footer a:hover{
         
       button.b_prata {
           font-family: Arial, Helvetica, sans-serif;
-          font-size: 14px;
-          padding: 10px 30px;
+          font-size: 10px;
+          padding: 10px 20px;
           text-align: center;
 
           color: #000000;
