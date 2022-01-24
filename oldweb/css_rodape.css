@@ -1,0 +1,564 @@
+﻿body{
+  height: 100%;	
+  background-size: cover; /*Css padrão*/
+  -webkit-background-size: cover; /*Css safari e chrome*/
+  -moz-background-size: cover; /*Css firefox*/
+  -ms-background-size: cover; /*Css IE não use mer#^@%#*/
+  -o-background-size: cover; /*Css Opera*/
+ }
+
+ .fullheight {
+  /*com isso o header ficará sempre com o tamanho da tela */
+  height: 100vh;
+  /*background geralmente uso o modo compacto, mas aqui vou colocar separadamente para explicar cada parte*/
+  /* aqui defino a imagem maior*/
+  background-image: url("imagem/login_aten1.png");
+  /*deixa o background com efeito paralax*/
+  background-attachment: fixed;
+  /* cover é para nunca deixar espaço sem imagem*/
+  background-size: cover;
+}
+@media screen and (max-width: 800px) {
+  .fullheight {
+    background-image: url("imagem/login_aten1.png");
+  }
+}
+
+/* aqui troco a imagem pra cada resolução na ordem do maior pro menor */
+@media screen and (max-width: 1500px) {
+  .header.fullheight {
+    background-image: url("imagem/login_aten1.png");
+  }
+}
+@media screen and (max-width: 1000px) {
+  .header.fullheight {
+    background-image: url("imagem/login_aten1.png");
+  }
+}
+@media screen and (max-width: 800px) {
+  .header.fullheight {
+    background-image: url("imagem/login_aten1.png");
+  }
+}
+@media screen and (max-width: 600px) {
+  .header.fullheight {
+    background-image: url("imagem/login_aten1.png");
+  }
+}
+@media screen and (max-width: 400px) {
+  .header.fullheight {
+    background-image: url("imagem/login_aten1.png");
+  }
+}
+@media screen and (max-width: 320px) {
+  .fullheight {
+    background-image: url("imagem/login_aten1.png");
+  }
+}
+
+.fc {
+    margin: 0 auto;
+    margin-right: 150px;
+}
+
+  #div_esquerda{
+      float: left;
+      background-color: transparent;
+  
+   }
+   
+  #div_centro{
+     float: left;
+     background-color: transparent; 
+  }
+
+#div_direita{
+   float: left;
+   background-color: transparent;
+} 
+
+#tudo {
+	min-height: 100%;
+	height: 100%; /* hack para IE6 que trata height como min-height */
+	position: relative;
+}
+#conteudo {
+	padding-bottom: 30px;	
+	position: relative;	
+	top: 0;
+	width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    border: 2px dashed black;
+	text-align:center;
+    text-shadow: 2px 1px 3px #000;
+	display: float;	
+}
+#rodape {
+	position: absolute;
+	bottom: 0;
+	}
+input,
+textarea {
+    color: red;
+	padding: 6px;
+    display: block;
+    width: 100%;
+}
+/*Mudar placeholder*/
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+   font: 10px verdana, arial, sans-serif;
+   font-style: bold;
+   width: 150px;
+   background-color: white;
+   fontcolor: black;
+   /*text-transform: uppercase;*/
+}
+::-moz-placeholder { /* Firefox 19+ */
+   color: red;
+   font: 10px verdana, arial, sans-serif;
+}
+:-ms-input-placeholder { /* IE 10+ */
+   color: pink;  
+   font: 10px verdana, arial, sans-serif;
+}
+:-moz-placeholder { /* Firefox 18- */
+   color: green;
+   font: 10px verdana, arial, sans-serif;
+}
+/*Mudar form*/
+form {
+  border:2px solid;
+  width: 300px;
+  margin: 0 auto;
+  }
+ 
+/* BTN GERAL */
+.btn{ 
+    background:none;
+    border: solid 1px transparent;
+    border-radius: 5px;
+    font-size: 8px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight:300;
+    padding: 8px 15px;
+    text-decoration: none;
+}
+
+/* BTN CORES   */
+.btn-primary{
+    background:#00BFFF; 	
+    border-color #1E90FF;
+    color: #120f12;
+    transition: background 0.3 linear 0s;
+}
+    .btn-primary:hover{
+    background: #1E98FF;
+    border-color: #4169E1;
+    color: #ffffff;
+}
+  
+button.b_padrao {
+	/*font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	padding: 10px 20px;*/
+	color: #454d9e;
+	background: -moz-linear-gradient(top,#ffffff 0%,#ebebeb 50%,#dbdbdb 50%,#5483e3);
+	background: -webkit-gradient(linear, left top, left bottom,from(#ffffff),color-stop(0.50, #ebebeb),color-stop(0.50, #dbdbdb),to(#5483e3));
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	border: 1px solid #1169d4;
+	-moz-box-shadow:0px 1px 3px rgba(000,000,000,0.5),inset 0px 0px 2px rgba(090,124,209,1);
+	-webkit-box-shadow:	0px 1px 3px rgba(000,000,000,0.5),inset 0px 0px 2px rgba(090,124,209,1);
+	box-shadow:0px 1px 3px rgba(000,000,000,0.5),inset 0px 0px 2px rgba(090,124,209,1);
+	text-shadow:0px -1px 0px rgba(000,000,000,0.2),	0px 1px 0px rgba(217,204,217,1);
+}  
+  
+  
+.b_banir {
+	/*font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	padding: 5px 20px;*/
+
+  	background: -moz-linear-gradient(top,#ffbdf5 0%,#ff82ec 25%,#fc46e1);
+	background: -webkit-gradient(linear, left top, left bottom,from(#ffbdf5),color-stop(0.25, #ff82ec),to(#fc46e1));
+	-moz-border-radius: 30px;
+	-webkit-border-radius: 30px;
+	border-radius: 30px;
+	border: 3px solid #ffffff;
+	-moz-box-shadow:0px 3px 11px rgba(000,000,000,0.5),inset 9px 0px 1px rgba(255,000,217,1);
+	-webkit-box-shadow:0px 3px 11px rgba(000,000,000,0.5),inset 9px 0px 1px rgba(255,000,217,1);
+	box-shadow:	0px 3px 11px rgba(000,000,000,0.5),inset 9px 0px 1px rgba(255,000,217,1);
+	text-shadow:0px -1px 0px rgba(000,000,000,0.2),0px 1px 0px rgba(255,255,255,0.3);
+    color: #120f12;
+    transition: background 0.3 linear 0s;
+} 
+
+button.b_padrao {
+	/*font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	padding: 10px 20px;*/
+	color: #454d9e;
+	background: -moz-linear-gradient(top,#ffffff 0%,#ebebeb 50%,#dbdbdb 50%,#5483e3);
+	background: -webkit-gradient(linear, left top, left bottom,from(#ffffff),color-stop(0.50, #ebebeb),color-stop(0.50, #dbdbdb),to(#5483e3));
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	border: 1px solid #1169d4;
+	-moz-box-shadow:0px 1px 3px rgba(000,000,000,0.5),inset 0px 0px 2px rgba(090,124,209,1);
+	-webkit-box-shadow:	0px 1px 3px rgba(000,000,000,0.5),inset 0px 0px 2px rgba(090,124,209,1);
+	box-shadow:0px 1px 3px rgba(000,000,000,0.5),inset 0px 0px 2px rgba(090,124,209,1);
+	text-shadow:0px -1px 0px rgba(000,000,000,0.2),	0px 1px 0px rgba(217,204,217,1);
+}
+button.b_teste {
+	/*font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	padding: 10px 20px;*/
+    color: #050505;
+	background: -moz-linear-gradient(top,#ffffff 0%,#ebebeb 50%,#dbdbdb 50%,#b5b5b5);
+	background: -webkit-gradient(linear, left top, left bottom,	from(#ffffff), color-stop(0.50, #ebebeb),color-stop(0.50, #dbdbdb),to(#b5b5b5));
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	border: 1px solid #949494;
+	-moz-box-shadow:0px 1px 3px rgba(000,000,000,0.5),inset 6px 0px 2px rgba(255,255,255,1);
+	-webkit-box-shadow:	0px 1px 3px rgba(000,000,000,0.5),inset 6px 0px 2px rgba(255,255,255,1);
+	box-shadow:0px 1px 3px rgba(000,000,000,0.5),inset 6px 0px 2px rgba(255,255,255,1);
+	text-shadow:0px -1px 0px rgba(000,000,000,0.2),0px 1px 0px rgba(255,255,255,1);
+}
+button.b_verde {
+	/*font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	padding: 10px 20px;
+	color: #050505;*/
+	background: -moz-linear-gradient(
+		top,
+		#ffffff 0%,
+		#c7d95f 50%,
+		#add136 50%,
+		#6d8000);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#ffffff),
+		color-stop(0.50, #c7d95f),
+		color-stop(0.50, #add136),
+		to(#6d8000));
+	-moz-border-radius: 14px;
+	-webkit-border-radius: 14px;
+	border-radius: 14px;
+	border: 1px solid #6d8000;
+	-moz-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 2px rgba(255,255,255,1);
+	-webkit-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 2px rgba(255,255,255,1);
+	box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 2px rgba(255,255,255,1);
+	text-shadow:
+		0px -1px 0px rgba(000,000,000,0.2),
+		0px 1px 0px rgba(255,255,255,0.4);
+}
+button.b_rosa {
+	/*font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	padding: 10px 20px;
+	*/
+	color: #050505;
+	background: -moz-linear-gradient(
+		top,
+		#ffffff 0%,
+		#d95fa4 50%,
+		#cf36b8 50%,
+		#80003e);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#ffffff),
+		color-stop(0.50, #d95fa4),
+		color-stop(0.50, #cf36b8),
+		to(#80003e));
+	-moz-border-radius: 14px;
+	-webkit-border-radius: 14px;
+	border-radius: 14px;
+	border: 1px solid #80000b;
+	-moz-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 2px rgba(255,255,255,1);
+	-webkit-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 2px rgba(255,255,255,1);
+	box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 2px rgba(255,255,255,1);
+	text-shadow:
+		0px -1px 0px rgba(000,000,000,0.2),
+		0px 1px 0px rgba(255,255,255,0.4);
+}
+button.b_prata {
+	/*font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	padding: 15px 30px;
+    */
+	color: #000000;
+	background: -moz-linear-gradient(
+		top,
+		#000000 0%,
+		#ffffff 5%,
+		#000000);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#000000),
+		color-stop(0.5, #ffffff),
+		to(#000000));
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	border: 3px solid #ffffff;
+	-moz-box-shadow:
+		0px 1px 3px rgba(027,027,184,0.4),
+		inset 0px 0px 69px rgba(255,255,255,1);
+	-webkit-box-shadow:
+		0px 1px 3px rgba(027,027,184,0.4),
+		inset 0px 0px 69px rgba(255,255,255,1);
+	box-shadow:
+		0px 1px 3px rgba(027,027,184,0.4),
+		inset 0px 0px 69px rgba(255,255,255,1);
+	text-shadow:
+		0px 0px 10px rgba(000,000,000,1),
+		0px 0px 20px rgba(255,255,255,1);
+}
+button.b_ouro {
+	/*font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	padding: 8px 20px;*/
+	color: #000000;
+	background: -moz-linear-gradient(
+		top,
+		#ffffff 0%,
+		#c9ab34 50%,
+		#57461c 50%,
+		#755b1a 65%,
+		#a38923);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#ffffff),
+		color-stop(0.50, #c9ab34),
+		color-stop(0.50, #57461c),
+		color-stop(0.65, #755b1a),
+		to(#a38923));
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	border: 1px solid #000000;
+	-moz-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 5px rgba(161,142,016,0.6);
+	-webkit-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 5px rgba(161,142,016,0.6);
+	box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 5px rgba(161,142,016,0.6);
+	text-shadow:
+		0px -1px 3px rgba(255,255,255,0.8),
+		0px 1px 0px rgba(255,255,255,0.3);
+}
+
+.btn_unimed {
+	padding-bottom: 30px;
+	display: float;
+    height: 15px;
+    width:  100px;
+    margin: 0 auto;
+    border: 2px dashed black;
+	text-align:center;
+    text-shadow: 2px 1px 3px #000;
+    background-color: transparent;
+	
+	
+	background: -moz-linear-gradient(
+		top,
+		#ffffff 0%,
+		#c7d95f 50%,
+		#add136 50%,
+		#6d8000);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#ffffff),
+		color-stop(0.50, #c7d95f),
+		color-stop(0.50, #add136),
+		to(#6d8000));
+	
+	-moz-border-radius: 14px;
+	-webkit-border-radius: 14px;
+	border-radius: 14px;
+	border: 1px solid #6d8000;
+	-moz-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 2px rgba(255,255,255,1);
+	-webkit-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 2px rgba(255,255,255,1);
+	box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 2px rgba(255,255,255,1);
+	text-shadow:
+		0px -1px 0px rgba(000,000,000,0.2),
+		0px 1px 0px rgba(255,255,255,0.4);
+
+    background-image:url("imagem/unimed.png");
+    border: groove;
+}
+.btn_uniodo {
+		padding-bottom: 30px;
+	display: float;
+    height: 15px;
+    width:  100px;
+    margin: 0 auto;
+    border: 2px dashed black;
+	text-align:center;
+    text-shadow: 2px 1px 3px #000;
+    background-color: transparent;
+	
+	
+	background: -moz-linear-gradient(
+		top,
+		#ffffff 0%,
+		#c7d95f 50%,
+		#add136 50%,
+		#6d8000);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#ffffff),
+		color-stop(0.50, #c7d95f),
+		color-stop(0.50, #add136),
+		to(#6d8000));
+	
+	-moz-border-radius: 14px;
+	-webkit-border-radius: 14px;
+	border-radius: 14px;
+	border: 1px solid #6d8000;
+	-moz-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 2px rgba(255,255,255,1);
+	-webkit-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 2px rgba(255,255,255,1);
+	box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 2px rgba(255,255,255,1);
+	text-shadow:
+		0px -1px 0px rgba(000,000,000,0.2),
+		0px 1px 0px rgba(255,255,255,0.4);
+    background-image:url("imagem/uniodonto.png");	
+    border: groove;
+}
+.btn_amil {
+	padding-bottom: 30px;
+	display: float;
+    height: 15px;
+	width:  100px;
+    margin: 0 auto;
+    border: 2px dashed black;
+	text-align:center;
+    text-shadow: 2px 1px 3px #000;
+    background-color: transparent;
+	
+	
+	background: -moz-linear-gradient(
+		top,
+		#ffffff 0%,
+		#c7d95f 50%,
+		#add136 50%,
+		#6d8000);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#ffffff),
+		color-stop(0.50, #c7d95f),
+		color-stop(0.50, #add136),
+		to(#6d8000));
+	
+	-moz-border-radius: 14px;
+	-webkit-border-radius: 14px;
+	border-radius: 14px;
+	border: 1px solid #6d8000;
+	-moz-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 2px rgba(255,255,255,1);
+	-webkit-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 2px rgba(255,255,255,1);
+	box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 2px rgba(255,255,255,1);
+	text-shadow:
+		0px -1px 0px rgba(000,000,000,0.2),
+		0px 1px 0px rgba(255,255,255,0.4);
+	
+    background-image:url("imagem/amil_red.png");
+    border: groove;
+}
+
+.btn_dental {
+	padding-bottom: 30px;
+	display: float;
+    height: 15px;
+    width:  100px;
+    margin: 0 auto;
+    border: 2px dashed black;
+	text-align:center;
+    text-shadow: 2px 1px 3px #000;
+    background-color: transparent;
+	
+	
+	background: -moz-linear-gradient(
+		top,
+		#ffffff 0%,
+		#c7d95f 50%,
+		#add136 50%,
+		#6d8000);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#ffffff),
+		color-stop(0.50, #c7d95f),
+		color-stop(0.50, #add136),
+		to(#6d8000));
+	
+	-moz-border-radius: 14px;
+	-webkit-border-radius: 14px;
+	border-radius: 14px;
+	border: 1px solid #6d8000;
+	-moz-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 2px rgba(255,255,255,1);
+	-webkit-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 2px rgba(255,255,255,1);
+	box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 2px rgba(255,255,255,1);
+	text-shadow:
+		0px -1px 0px rgba(000,000,000,0.2),
+		0px 1px 0px rgba(255,255,255,0.4);
+    background-image:url("imagem/dental.png");	
+    border: groove;
+}
+
+#btn_login{
+  margin-left : 100px;
+  padding-top : 20px;
+  float : left;
+}
+
+#btn_cancelar{
+ height  : 31px;
+ padding : 1px, 0px;
+}
+
+
+
+
+
+
