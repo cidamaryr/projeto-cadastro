@@ -316,7 +316,7 @@ footer a:hover{
         .tab label {
          display: block;
          float: left;
-         padding: 12px 20px;
+         padding: 6px 10px;
          margin-right: 5px;
          cursor: pointer;
          transition: background-color .3s;
