@@ -341,7 +341,7 @@ footer a:hover{
         margin: auto;
         position:absolute;
         border: 2px solid var(--cor3); /*  #5b9780; */
-        padding: 10px 30px 40px;
+        padding: 5px 15px 20px;
         line-height: 1.4em;
         opacity: 0;
         transform: rotateX(-20deg);
