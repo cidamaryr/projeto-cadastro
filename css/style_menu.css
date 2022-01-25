@@ -62,7 +62,6 @@
 }
 
 body{
-
     background-color: var(--cor0);
     font-family: var(--fonte-padrao);
 }
@@ -100,7 +99,7 @@ header > p {
     position: relative;
 
     background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
-   /* background-image: url(imagem/logo_ape.png);*/
+    background-image: url(imagens/wallpaper005.jpg);
     height: 13vh;
     margin: auto;
     width: auto;
@@ -219,6 +218,9 @@ foter a {
     color: white;
     font-weight: bolder;
     text-decoration: none;
+}
+foter p {
+   
 }
 footer a:hover{
     text-decoration: underline;
