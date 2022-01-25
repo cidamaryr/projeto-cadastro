@@ -220,7 +220,7 @@ foter a {
     text-decoration: none;
 }
 foter p {
-   
+   display: block;
 }
 footer a:hover{
     text-decoration: underline;
