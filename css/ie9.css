@@ -1,0 +1,33 @@
+
+/*********************************************************************************/
+/* Basic                                                                         */
+/*********************************************************************************/
+
+	.button
+	{
+		background-image: url('apeoesp_2/images/button.svg');
+	}
+	
+		.button:active
+		{
+			background-image: url('apeoesp_2/images/button-active.svg');
+		}
+		
+		.button-alt
+		{
+			background-image: url('apeoesp_2/images/button-alt.svg');
+		}
+		
+			.button-alt:active
+			{
+				background-image: url('apeoesp_2/images/button-alt-active.svg');
+			}
+
+	ul.social
+	{
+	}
+	
+		ul.social li
+		{
+			background-image: url('apeoesp_2/images/social-li.svg');
+		}
