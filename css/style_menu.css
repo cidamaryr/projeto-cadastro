@@ -425,16 +425,16 @@ footer a:hover{
             font-weight: bolder;
             padding:2px;
         }
-        th{
+        th, td{
             border: 1px solid black;
             padding: 2px;
         }
-        td#btn_login{
+        #btn_login{
             padding: 10px, 15px;
             margin: auto;
             background-color: purple;
         }
-        td#btn_cancelar{
+        #btn_cancelar{
             padding : 10px, 15px;
             margin: auto;
             background-color: yellow;

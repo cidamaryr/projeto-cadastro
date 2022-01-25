@@ -27,32 +27,32 @@ body {
 	}
 
     #lateral {
-        padding:0 50px 0 0;
+        padding:10 50px 0 0;
         -moz-transition: all 0.5s ease;
             -webkit-transition: all 0.5s ease;
                 -o-transition: all 0.5s ease;
                     transition: all 0.5s ease;
         font-size:1.2em;
-        background:rgb(44,62,80);
-    
-        background-image: -moz-linear-gradient(135deg, rgb(3,8,12), rgb(16,57,79));
+
+        background:rgb(64, 146, 228);
+         background-image: -moz-linear-gradient(135deg, rgb(3,8,12), rgb(16,57,79));
          background-image: -webkit-linear-gradient(135deg, rgb(3,8,12), rgb(16,57,79));
           background-image: -o-linear-gradient(135deg, rgb(3,8,12), rgb(16,57,79) );
            background-image: -ms-linear-gradient(135deg, rgb(3,8,12), rgb(16,57,79));
             background-image: linear-gradient(135deg, rgb(3,8,12), rgb(16,57,79));
-        
-/*
+     /*   
          background-image: -moz-linear-gradient(135deg, #116611, #86dd86);
          background-image: -webkit-linear-gradient(135deg, #116611, #86dd86);
           background-image: -o-linear-gradient(135deg, #116611, #86dd86 );
            background-image: -ms-linear-gradient(135deg, #116611, #86dd86);
             background-image: linear-gradient(135deg, #116611, #86dd86); */
+
         height:100%;
         overflow:hidden;
-        width:370px; 
+        width:320px; 
         position:fixed;
         top:0;
-        left:-320px;
+        left:-270px;
         }
     #lateral:before {
         z-index:1000;
@@ -68,10 +68,10 @@ body {
         }
     #lateral:hover, #lateral:focus,  #lateral:active  {
         overflow-y:scroll;
-        -moz-transform: translate(320px, 0);
-            -webkit-transform: translate(320px, 0);
-                -o-transform: translate(320px, 0);
-                    transform: translate(320px, 0);
+        -moz-transform: translate(270px, 0);
+            -webkit-transform: translate(270px, 0);
+                -o-transform: translate(270px, 0);
+                    transform: translate(270px, 0);
         padding-right:0;
         }	
 
@@ -82,25 +82,27 @@ body {
                     -o-transition: all 0.5s ease;
                         transition: all 0.5s ease;
             font-size:1.2em;
-            background:rgb(44,62,80);
-            /*
+            background:rgb(64, 146, 228);
+         /*
             background-image: -moz-linear-gradient(135deg, #116611, #86dd86);
              background-image: -webkit-linear-gradient(135deg, #116611, #86dd86);
               background-image: -o-linear-gradient(135deg, #116611, #86dd86 );
                background-image: -ms-linear-gradient(135deg, #116611, #86dd86);
-                background-image: linear-gradient(135deg, #116611, #86dd86);*/
+                background-image: linear-gradient(135deg, #116611, #86dd86);
+*/
+            
                 background-image: -moz-linear-gradient(135deg, rgb(3,8,12), rgb(16,57,79);
                 background-image: -webkit-linear-gradient(135deg, rgb(3,8,12), rgb(16,57,79);
                  background-image: -o-linear-gradient(135deg, rgb(3,8,12), rgb(16,57,79) );
                   background-image: -ms-linear-gradient(135deg, rgb(3,8,12), rgb(16,57,79));
-                   background-image: linear-gradient(135deg, rgb(3,8,12), rgb(16,57,79));
+                   background-image: linear-gradient(135deg, rgb(3,8,12), rgb(16,57,79)); 
                    
             height:100%;
             overflow:hidden;
-            width:370px; 
+            width:320px; 
             position:fixed;
             top:0;
-            left:-320px;
+            left:-270px;
             }
         #lateral:before {
             z-index:1000;
@@ -116,10 +118,10 @@ body {
             }
         #lateral:hover, #lateral:focus,  #lateral:active  {
             overflow-y:scroll;
-            -moz-transform: translate(320px, 0);
-                -webkit-transform: translate(320px, 0);
-                    -o-transform: translate(320px, 0);
-                        transform: translate(320px, 0);
+            -moz-transform: translate(270px, 0);
+                -webkit-transform: translate(270px, 0);
+                    -o-transform: translate(270px, 0);
+                        transform: translate(270px, 0);
             padding-right:0;
             }	
 
