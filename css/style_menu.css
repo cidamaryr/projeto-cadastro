@@ -20,15 +20,22 @@
   --cor3: #7F5959;
   --cor4: #804515 ;
   --cor5: #552700;
-  */
-  
+ */
+  --cor0: rgba(249, 249, 249, 0.99);
+  --cor1: rgb(208, 101, 3);
+  --cor2: rgb(22, 145, 190);
+  --cor3: rgb(22, 107, 162);
+  --cor4: rgb(27, 54, 71);
+  --cor5: rgb(21, 40, 54);
+/*
+
   --cor0: #F5F5F5; 
   --cor1: #75C1C7;
   --cor2: #757575;
   --cor3: #708D8F;
   --cor4: #C2C2C2;
   --cor5: #5560C7; 
-/*
+
    --cor0: #c5ebd6;   
    --cor1: #83e1ad;
    --cor2: #3ddc84;
@@ -114,12 +121,10 @@ main{
     border-radius: 5px; 
     box-shadow: 5px 5px 15px #4d3d3569; /*quanto vai para direita, quanto vai para baixo, espalhamento e a cor*/
     padding: 2px;
-    /*margin-left: 10px;*/
     margin: auto;
-    max-width: 500px;
+    max-width: 400px;
     height: 300px;
     text-align: left;
-
 }
 
 main p{ 
@@ -150,12 +155,12 @@ main h1 {
     color: var(--cor5);
     font-family: var(--fonte-android);
     font-weight: normal;
-    font-size: 1.8em;
+    font-size: 1.3em;
 }
 main h2 {
     font-family: var(--fonte-android);
     color: var(--cor4);
-    font-size: 1.3em;
+    font-size: 1.1em;
     font-weight: normal;
     background-image: linear-gradient(to right, var(--cor1), transparent) ;
     text-indent: 8px;
@@ -213,7 +218,7 @@ footer {
       background-color: var(--cor5);
       color: white;
       text-align: center;
-      font-size: 1em;
+      font-size: 0.8 em;
       padding: 0px;
 }
 footer p{
@@ -256,11 +261,11 @@ footer a:hover{
       }
         
       button.b_padrao {
-          /*font-family: Arial, Helvetica, sans-serif;
-          font-size: 14px;
-          */
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 12px;
+      
           padding: 10px 20px;
-          color: #454d9e; 
+          color: #070813; 
           background: -moz-linear-gradient(top,#ffffff 0%,#ebebeb 50%,#dbdbdb 50%,#5483e3);
           background: -webkit-gradient(linear, left top, left bottom,from(#ffffff),color-stop(0.50, #ebebeb),color-stop(0.50, #dbdbdb),to(#5483e3));
           -moz-border-radius: 10px;
@@ -275,10 +280,12 @@ footer a:hover{
         
         
       button.b_prata {
+          margin-left: 20px;
           font-family: Arial, Helvetica, sans-serif;
-          font-size: 10px;
-          padding: 10px 20px;
+          font-size: 12px;
+          padding: 15px 35px;
           text-align: center;
+
 
           color: #000000;
           background: -moz-linear-gradient(
@@ -311,35 +318,37 @@ footer a:hover{
      
 
        /* Para o formulario de login, mostrar abas */
-       .tab {
+       .tab_login {
          width: 80%;
          margin:auto;
+
        }
    
         /*envolve todo o nosso conteúdo*/
-        .tab label {
+        .tab_login label {
          display: block;
          float: left;
          padding: 6px 10px;
          margin-right: 5px;
          cursor: pointer;
+         background: var(--cor2);   
          transition: background-color .3s;
         }
-   
-       .tab label:hover,
-       .tab input:checked label {
+
+
+       .tab_login label:hover,
+       .tab_login input:checked label {
            background: var(--cor3);    
-           color: #fff;
-        }
-        .tabs {
+           color:  #fff;         }
+        .tabs_login {
         clear: both;
         perspective: auto;
         -webkit-perspective: auto;
         }
 
-        .tabs .content {
+        .tabs_login .content {
         padding: auto;    
-        background: #fff;
+        background:  #fff; 
         /*width: 750px;*/
         width: auto;
         margin: auto;
@@ -353,23 +362,23 @@ footer a:hover{
         transition: opacity .3s, transform 1s;
         z-index: 0;
         }
-        #tab1:checked ~ .tabs .content:nth-of-type(1),
-        #tab2:checked ~ .tabs .content:nth-of-type(2),
-        #tab3:checked ~ .tabs .content:nth-of-type(3),
-        #tab4:checked ~ .tabs .content:nth-of-type(4) {
+        #tab1:checked ~ .tabs_login .content:nth-of-type(1),
+        #tab2:checked ~ .tabs_login .content:nth-of-type(2),
+        #tab3:checked ~ .tabs_login .content:nth-of-type(3),
+        #tab4:checked ~ .tabs_login .content:nth-of-type(4) {
         transform: rotateX(0);
         opacity: 1;
         z-index: 1;
         }
 
-       .tab input[type] {
+       .tab_login input[type] {
        /*display: none;*/
        visibility:hidden;
        }
        .fc {
           width: auto;
           margin: auto;
-          color:var(--cor3);
+          color:var(--cor5);
           padding: 5px;
           font-size: 14px;
           border:2px solid;
@@ -398,7 +407,7 @@ footer a:hover{
         text-align: center;
        }
    
-      .tabela input[type]{
+      .tabela_login input[type]{
         width:auto;
         visibility:visible;
         background-color: white;   
@@ -407,7 +416,7 @@ footer a:hover{
         color: red;  
         text-align: center;
         }
-       .tabela td {
+       .tabela_login td {
              background-color: var(--cor0);
              width:auto;
              margin:auto;
@@ -417,35 +426,65 @@ footer a:hover{
              */
         }
         
-              
-        #btn_login{
-            float: left;
-           /* padding: 20px, 10px;*/
-          }
-          
-          #btn_cancelar{
-           float: right;
-           /*padding : 20px, 10px;*/
-         }
+            
+  
+         .tabela_login_botoes{
+            width: 253px;
+            border-collapse: collapse;
+            align-items: center;
+        }
 
-        table{
+        .tabela_login{
             width: 200px;
             border-collapse: collapse;
         }
-        caption{
-            font-size: 1.3em;
+
+        .tabela_login caption{
+            font-size: 1.1em;
             font-weight: bolder;
             padding:8px;
         }
-        th, td{
+        .tabela_login th, td{
             border: 1px solid black;
             padding: 10px;
         }
        /* tr:nth-child(even){
             background-color: rgb(228,228,228);
         }*/
-        div#container{
+        div#container_login{
             padding: 0px;
-           /* width: 100vw;*/
+            width: 100vw;
             overflow-x: auto;
         }
+
+
+        .no-touch .nav ul:hover a:hover {
+            color: rgba(249, 249, 249, 0.99);
+        }
+        
+        /* Adding some background color to the different menu items */
+        
+        .nav li:nth-child(6n+1) {
+            background: rgb(208, 101, 3);
+        }
+        
+        .nav li:nth-child(6n+2) {
+            background: rgb(233, 147, 26);
+        }
+        
+        .nav li:nth-child(6n+3) {
+            background: rgb(22, 145, 190);
+        }
+        
+        .nav li:nth-child(6n+4) {
+            background: rgb(22, 107, 162);
+        }
+        
+        .nav li:nth-child(6n+5) {
+            background: rgb(27, 54, 71);
+        }
+        
+        .nav li:nth-child(6n+6) {
+            background: rgb(21, 40, 54);
+        }
+        

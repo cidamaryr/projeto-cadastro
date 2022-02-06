@@ -21,23 +21,23 @@
  
 <main>  
        
-        <div class="tab">
-            <input type="radio" name="tabs" id="tab1" checked>
+        <div class="tab_login">
+            <input type="radio" name="tabs_login" id="tab1" checked>
             <label for="tab1">Sistemas</label>
       
-            <input type="radio" name="tabs" id="tab2">
+            <input type="radio" name="tabs_login" id="tab2">
             <label for="tab2">Funcionários</label>
       
-            <div class="tabs">
+            <div class="tabs_login">
 
-     		  <div class="content">
+     		    <div class="content"> 
 
 
                   <form action="entrar.php" method="POST" class="fc">
                      
-                      <div class="tabela">
+                      <div class="container_login">
                          
-                          <table>
+                          <table class="tabela_login">
                                 <h4>Login Sistemas</h4>
                                 <tr>
                                     <td><strong>Usuário:</strong> </td>
@@ -48,16 +48,12 @@
                                     <td> <input type="password"  name="senha" minlength="8" required placeholder="senha" size='17' > </td>
                                 </tr>
                           </table>
-                          <table>
-                  
-                                    <td> 
-                                        <button name="btn_login"    class="btn btn-primary b_prata" type="input"> <i class="fa fa-user-circle-o" aria-hidden="true"></i> <strong>Entrar </strong> </button> 
-                                    </td>
-                                    <td>
-                                        <button name="btn_cancelar" class="btn btn-primary b_prata" type="reset"> <i class="fa fa-power-off" aria-hidden="true"></i> <strong>Sair   </strong> </button> 
-                                    </td>
-                                
-                    
+                          <table class="tabela_login_botoes">
+                                 <td> 
+                                        <button name="btn_login"    class="btn btn-primary b_prata" type="input"> <i class="fa fa-user-circle-o" aria-hidden="true"></i> <strong>Acessar Sistemas</strong> </button> 
+                                 <!--   <button name="btn_cancelar" class="btn btn-primary b_prata" type="reset"> <i class="fa fa-power-off" aria-hidden="true"></i> <strong>Sair   </strong> </button>--> 
+                         
+                                </td>
                           </table>
                       </div>
 
@@ -70,9 +66,9 @@
 
                 <form action="entrar_func.php" method="POST" class="fc">
                    
-                    <div class="tabela">
+                    <div class="container_login">
                        
-                        <table>
+                        <table class="tabela_login">
                               <h4>Login Sistema de Funcionários</h4>
                               <tr>
                                   <td><strong>Usuário:</strong> </td>
@@ -83,17 +79,13 @@
                                   <td> <input type="password"  name="senha" minlength="8" required placeholder="senha" size='17' > </td>
                               </tr>
                         </table>
-                        <table>
+                        <table class="tabela_login_botoes">
                                   <td> 
-                                      <button name="btn_login" class="btn btn-primary b_prata" type="input"> <i class="fa fa-user-circle-o" aria-hidden="true"></i> <strong>Entrar </strong> </button> 
+                                    <button name="btn_login" class="btn btn-primary b_prata" type="input"> <i class="fa fa-user-circle-o" aria-hidden="true"></i> <strong>Acessar Funcionários </strong> </button>
+                                   <!-- <button name="btn_cancelar" class="btn btn-primary b_prata" type="reset"> <i class="fa fa-power-off" aria-hidden="true"></i> <strong>Sair   </strong> </button> -->
                                   </td>
-                                  
-                                  <td>
-                                      <button name="btn_cancelar" class="btn btn-primary b_prata" type="reset"> <i class="fa fa-power-off" aria-hidden="true"></i> <strong>Sair   </strong> </button> 
-                                  </td>
-                                  
-                  
                         </table>
+                       
                     </div>
 
                 </form>
