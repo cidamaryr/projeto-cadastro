@@ -6,21 +6,7 @@
 }
 
 :root {
-/*
-  --cor0: #F2F2F2; 
-  --cor1: #FFD1AA;
-  --cor2: #349BEF;
-  --cor3: #FFD0B2;
-  --cor4: #CDE6F8;
-  --cor5: #251f74;
 
-  --cor0: #FFD1AA; 
-  --cor1: #D49A6A;
-  --cor2: #AA6C39;
-  --cor3: #7F5959;
-  --cor4: #804515 ;
-  --cor5: #552700;
- */
   --cor0: rgba(249, 249, 249, 0.99);
   --cor1: rgb(208, 101, 3);
   --cor2: rgb(22, 145, 190);
@@ -28,35 +14,12 @@
   --cor4: rgb(27, 54, 71);
   --cor5: rgb(21, 40, 54);
 /*
-
-  --cor0: #F5F5F5; 
-  --cor1: #75C1C7;
-  --cor2: #757575;
-  --cor3: #708D8F;
-  --cor4: #C2C2C2;
-  --cor5: #5560C7; 
-
    --cor0: #c5ebd6;   
    --cor1: #83e1ad;
    --cor2: #3ddc84;
    --cor3: #2fa866;
    --cor4: #1a5c37;
    --cor5: #063d1e;  
-
- --cor0: #F2F2F2;
- --cor1: #c5f0f0;
- --cor2: #226666; 
- --cor3: #407F7F ;
- --cor4: #0D4D4D;
- --cor5: #251f74;  
-
- --cor1: #FFD1AA; 
- --cor2: #D49A6A;
- --cor3: #AA6C39;
- --cor4: #7F5959;
- --cor5: #804515 ;
- --cor6: #552700;
-
 */
    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
    --fonte-destaque: 'Bebas Neue', cursive;
@@ -413,7 +376,7 @@ footer a:hover{
         background-color: white;   
         font-family: Arial, Helvetica, sans-serif;
         font-size: 1.2em;
-        color: var(--cor5);  
+        color: rgb(88, 2, 2);  
         text-align: left;
 
         }
